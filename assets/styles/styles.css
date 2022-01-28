@@ -1,3 +1,7 @@
+.main {
+  background: linear-gradient(to left, #f8fff5 25%, #fff 25%, #fff 75%);
+}
+
 .main .container {
   display: flex;
   align-items: stretch;
@@ -10,8 +14,10 @@
 
 .main-right {
   width: 25%;
-  border-left: 1px solid #000;
-  background-color: aqua;
+  padding-left: 20px;
+  padding-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  background-color: #f8fff5;
 }
 
 .post {
@@ -216,6 +222,102 @@
   color: #696974;
 }
 
+.news {
+  margin-top: 15px;
+}
+
+.news-item {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 13px;
+}
+
+.news-item-wrap {
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: stretch;
+}
+
+.news-item-img {
+  margin-right: 12px;
+}
+
+.news-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-item-content span {
+  display: inline;
+}
+
+.news-item-title {
+  width: 70%;
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.news-item-date {
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.news-item-drop {
+  padding: 0 3px;
+}
+
+.main {
+  background: linear-gradient(to left, #f8fff5 25%, #fff 25%, #fff 75%);
+}
+
+.main .container {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-left {
+  width: 75%;
+  padding-right: 50px;
+}
+
+.main-right {
+  width: 25%;
+  padding-left: 20px;
+  padding-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  background-color: #f8fff5;
+}
+
+.main {
+  background: linear-gradient(to left, #f8fff5 25%, #fff 25%, #fff 75%);
+}
+
+.main .container {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-left {
+  width: 75%;
+  padding-right: 50px;
+}
+
+.main-right {
+  width: 25%;
+  padding-left: 20px;
+  padding-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  background-color: #f8fff5;
+}
+
 .footer {
   background-color: #2b7d06;
 }
@@ -320,54 +422,6 @@
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.main .container {
-  display: flex;
-  align-items: stretch;
-}
-
-.main-left {
-  width: 75%;
-  padding-right: 50px;
-}
-
-.main-right {
-  width: 25%;
-  border-left: 1px solid #000;
-  background-color: aqua;
-}
-
-.main .container {
-  display: flex;
-  align-items: stretch;
-}
-
-.main-left {
-  width: 75%;
-  padding-right: 50px;
-}
-
-.main-right {
-  width: 25%;
-  border-left: 1px solid #000;
-  background-color: aqua;
-}
-
-.main .container {
-  display: flex;
-  align-items: stretch;
-}
-
-.main-left {
-  width: 75%;
-  padding-right: 50px;
-}
-
-.main-right {
-  width: 25%;
-  border-left: 1px solid #000;
-  background-color: aqua;
 }
 
 .slick-slide {
