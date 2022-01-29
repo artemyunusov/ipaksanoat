@@ -1,10 +1,13 @@
 $('.post-slider').slick({
-  // centerMode: true,
+  centerMode: true,
+	autoplay: true,
   centerPadding: '0',
   slidesToShow: 3,
   slidesToScroll: 1,
 	dots: true,
 	arrows: false,
+  pauseOnHover:false,
+  pauseOnFocus: false,
   responsive: [
     {
       breakpoint: 768,
