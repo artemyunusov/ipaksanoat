@@ -2,6 +2,11 @@
   font-size: 10px;
 }
 
+.oh {
+  overflow: hidden;
+  margin-right: 17px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -162,7 +167,8 @@ section {
 }
 
 .header {
-  border-top: 3px solid #2b7d06;
+  z-index: 99;
+  border-top: 4px solid #2b7d06;
 }
 
 .header-top {
@@ -340,6 +346,7 @@ section {
 }
 
 .nav {
+  z-index: 99;
   height: 44px;
   display: flex;
   align-items: center;
@@ -385,6 +392,7 @@ section {
 }
 
 .nav-sub-list {
+  z-index: 99;
   padding: 10px 0 14px 14px;
   position: absolute;
   top: 100%;
@@ -529,7 +537,8 @@ section {
 }
 
 .header {
-  border-top: 3px solid #2b7d06;
+  z-index: 99;
+  border-top: 4px solid #2b7d06;
 }
 
 .header-top {
@@ -701,7 +710,8 @@ section {
 }
 
 .header {
-  border-top: 3px solid #2b7d06;
+  z-index: 99;
+  border-top: 4px solid #2b7d06;
 }
 
 .header-top {
@@ -873,7 +883,8 @@ section {
 }
 
 .header {
-  border-top: 3px solid #2b7d06;
+  z-index: 99;
+  border-top: 4px solid #2b7d06;
 }
 
 .header-top {
