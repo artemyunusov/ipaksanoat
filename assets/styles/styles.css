@@ -879,6 +879,7 @@
   margin-bottom: 20px;
 
   color: #2b7d06;
+	text-transform: uppercase;
 }
 
 .page-content p{
@@ -903,7 +904,10 @@
 .people-item{
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+	padding-bottom: 20px;
+  margin-bottom: 40px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, .16);
 }
 
 .people-item-news{
@@ -918,6 +922,8 @@
 
 .people-img{
   margin-right: 40px;
+	position: relative;
+	overflow: hidden;
   flex-shrink: 0;
   
   border-radius: 16px;
@@ -925,10 +931,12 @@
 }
 
 .people-img img{
-  width: 250px;
-  height: auto;
+	width: 220px;
+	height: 220px;
+	padding: 5px;
 
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 16px;
   flex-shrink: 0;
 }
 
@@ -945,8 +953,6 @@
 }
 
 .people-link{
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
 
   font-size: 17px;
@@ -955,7 +961,13 @@
 }
 
 .people-link img{
+	display: inline-block;
+	vertical-align: middle;
   margin-right: 10px;
+}
+
+.people-link span{
+	vertical-align: middle;
 }
 
 .people-content-col{
@@ -968,7 +980,7 @@
 
 .people-low div span{
   margin-bottom: 10px;
-  /* display: block; */
+  display: block;
   cursor: pointer;
 
   color: #2b7d06;
@@ -980,6 +992,19 @@
   display: none;
 
   line-height: 1.5;
+}
+
+.people-doc-download{
+  cursor: pointer;
+
+  color: #2b7d06;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.people-doc-download::first-letter{
+
+	text-transform: capitalize;
 }
 
 .work{
