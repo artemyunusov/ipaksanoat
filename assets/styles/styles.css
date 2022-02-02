@@ -1014,7 +1014,7 @@
 .work-title{
   margin-bottom: 50px;
 
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   color: #000100;
   text-transform: capitalize;
@@ -1030,7 +1030,7 @@
 .work-name{
   margin-bottom: 10px;
 
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 600;
   color: #2b7d06;
   text-transform: uppercase;
@@ -1039,6 +1039,12 @@
 .work-descr{
 
   line-height: 1.5;
+	font-size: 14px;
+	text-transform: lowercase;	
+}
+
+.work-descr::first-letter{
+	text-transform: capitalize;
 }
 
 .work-low{
@@ -1060,10 +1066,11 @@
 a.work-link{
   padding: 5px 10px;
 
-  font-size: 18px;
+  font-size: 14px;
   color: #2b7d06;
 
   border: 1px solid rgba(0, 0, 0, 0.16);
+	border-radius: 4px;
 
   transition: all .2s linear;
 }
@@ -1074,6 +1081,17 @@ a.work-link:hover{
 
   background-color: #2b7d06;
   border-color: #2b7d06;
+}
+
+ol li{
+	margin-bottom: 15px;
+}
+
+.color-green{
+
+	color: #2b7d06!important;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .burger {
