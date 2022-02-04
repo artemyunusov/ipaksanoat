@@ -1094,6 +1094,153 @@ ol li{
 	text-transform: uppercase;
 }
 
+.tab-list{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tab-item{
+	padding: 5px 15px;
+	cursor: pointer;
+
+	font-size: 12px;
+	color: #2b7d06;
+
+	border-bottom: 2px solid transparent;
+
+  transition: all .2s linear;
+}
+
+.tab-item.active{
+
+	border-color: #2b7d06;
+}
+
+.gallery-foto{
+	/* display: none; */
+	margin-bottom: 120px;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	grid-template-rows: auto;
+	justify-content: center;
+	grid-gap: 30px;
+}
+
+.gallery-item{
+	position: relative;
+	overflow: hidden;
+  display: none;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.gallery-item.active{
+  display: block;
+
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.gallery-item img{
+
+	transition: all .2s linear;
+}
+
+.gallery-item:hover .gallery-item-img{
+	transform: scale(1.2);
+}
+
+.gallery-item:hover .gallery-item-link{
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
+
+.gallery-item:hover .gallery-item-descr{
+	
+	transform: translateY(0);
+}
+
+.gallery-item:hover::after{
+	opacity: 1;
+}
+
+.gallery-item::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 2;
+	
+	transition: all .2s linear;
+}
+
+.gallery-item-link{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+
+	transform: translate(-50%, -50%);
+	transition: all .2s linear;
+	z-index: 99;
+}
+
+.gallery-item-link a{
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.gallery-item-descr{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px 20px;
+
+	background-color: #fff;
+	z-index: 999;
+	
+	transition: all .2s linear;
+	transform: translateY(100%);
+}
+
+
+
+
+
+
+
+/* //////////// stop */
+
+
+
+
+
+
+
+
+/* //////////// stop */
 .burger {
   display: none;
 }
@@ -1339,5 +1486,22 @@ ol li{
   .people-hidden{
 
     text-align: justify;
+  }
+
+  .gallery-foto{
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .gallery-item{
+    margin-bottom: 20px;
+  }
+
+  .tab-list{
+    display: block;
+  }
+
+  .tab-item{
+    margin-bottom: 10px;
   }
 }
