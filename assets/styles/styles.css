@@ -1225,6 +1225,32 @@ ol li{
 	transform: translateY(100%);
 }
 
+.law-wrap{
+	padding-top: 80px;
+	padding-bottom: 120px;
+
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.law-wrap a{
+
+	border-bottom: 1px solid rgba(0, 0, 0, .16);
+	color: #2b7d06;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.law-wrap table{
+	width: 100%!important;
+
+	text-align: center;
+}
+
+.law-wrap table, th, td {
+  border: 1px solid black;
+	border-collapse: collapse;
+}
 
 
 
