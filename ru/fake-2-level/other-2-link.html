@@ -3,14 +3,18 @@
 <body>
 
 	<script>
+
 		function loadStyle(url){
 				let link = document.createElement('link');
 				link.href = url;
 				link.rel = 'stylesheet';
 				document.body.appendChild(link);
 			}
+
 			// loadStyle("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
 			loadStyle("./../../assets/styles/styles.css");
+
 	</script>
   <svg style="display: none;">
     
@@ -59,9 +63,21 @@
   </svg>
 	<!-- libs -->
 	<script src="./../../assets/js/jquery.js"></script>
-	<!-- <script type="text/javascript" src="./../../assets/js/owl.carousel.min.js"></script> -->
+	<!-- <script type="text/javascript" src="./../assets/js/owl.carousel.min.js"></script> -->
+	<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+	<!-- <script>
+
+		AOS.init({
+			once: true
+		});
+
+		document.addEventListener("DOMContentLoaded", function() {
+    	setTimeout(function() { AOS.refresh(); }, 500);
+		});
+
+	</script> -->
 	<!-- custome -->
-	<!-- <script src="./../../assets/js/slider.js"></script> -->
+	<!-- <script src="./../assets/js/slider.js"></script> -->
 	<script src="./../../assets/js/to-top.js"></script>
 	<script src="./../../assets/js/burger.js"></script>
 
